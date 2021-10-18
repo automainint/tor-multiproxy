@@ -59,7 +59,7 @@ def parse_args(config_file):
   )
 
   parser.add_argument(
-    '--switch_delay',
+    '--switch-delay',
     type    = int,
     metavar = 'TIME',
     default = cfg.get('switch_delay'),
@@ -68,7 +68,7 @@ def parse_args(config_file):
   )
 
   parser.add_argument(
-    '--port_proxy',
+    '--port-proxy',
     type    = int,
     metavar = 'PORT',
     default = cfg.get('port_proxy'),
@@ -77,7 +77,7 @@ def parse_args(config_file):
   )
 
   parser.add_argument(
-    '--port_control',
+    '--port-control',
     type    = int,
     metavar = 'PORT',
     default = cfg.get('port_control'),
@@ -90,12 +90,12 @@ def parse_args(config_file):
     type    = str,
     metavar = 'FILE',
     default = cfg.get('list'),
-    help    = 'first tor control port',
+    help    = 'proxies list file',
     dest    = 'list',
   )
 
   parser.add_argument(
-    '--exit_timeout',
+    '--exit-timeout',
     type    = int,
     metavar = 'TIME',
     default = cfg.get('exit_timeout'),
